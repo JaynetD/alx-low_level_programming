@@ -3,7 +3,7 @@
  * main - printing
  *
  * Description: using the main function
- * Return 0
+ * Return: 0 if no error
  */
 int main(void)
 {
