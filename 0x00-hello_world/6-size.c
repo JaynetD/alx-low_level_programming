@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - print the size of many variable types
+ *
  * Return: 0 
  */
 int main(void)
