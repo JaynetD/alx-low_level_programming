@@ -3,11 +3,10 @@
 /**
  * main - print the size of many variable types
  *
- * Description: using the main function
- * thsi program prints "Programming is like building a multilingual puzzle
- * Return: 0
+ * Return: 0 if no errors
  */
 int main(void)
+{
 	int a;
 	long int b;
 	long long int c;
@@ -19,6 +18,6 @@ int main(void)
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
 	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
 	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
-	return (0);
-
+	return (0)
+}
 
