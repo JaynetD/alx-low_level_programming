@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * @c: carrier variable
- *
+ * @c: inputs
  * Return: 1 if true, 0 if false
  */
 
