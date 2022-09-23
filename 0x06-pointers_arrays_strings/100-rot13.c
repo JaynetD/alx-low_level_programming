@@ -1,5 +1,5 @@
 #include "main.h"
-#include <studio.h>
+#include <stdio.h>
 
 /**
  * rot13 - ...
@@ -14,7 +14,6 @@ char *rot13(char *s)
 	while (s[a])
 	{
 		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
-		{
 			if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
 			{
 				s[a] -= 13;
@@ -30,3 +29,4 @@ char *rot13(char *s)
 
 	return (s);
 }
+
