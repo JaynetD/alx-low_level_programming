@@ -20,13 +20,10 @@ char *rot13(char *s)
 				s[a] -= 13;
 				break;
 			}
-			
 			s[a] += 13;
 			break;
 		}
-
 		a++;
 	}
-
 	return (s);
 }
