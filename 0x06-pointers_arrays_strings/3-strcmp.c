@@ -25,6 +25,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		lim = a;
 	}
+
 	else
 	{
 		lim = b;
@@ -36,7 +37,8 @@ int _strcmp(char *s1, char *s2)
 		{
 			c++;
 			continue;
-		}	
+		}
+
 		else
 		{
 			r = s1[c] - s2[c];
