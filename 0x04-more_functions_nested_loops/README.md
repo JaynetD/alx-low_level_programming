@@ -9,3 +9,4 @@
 8- Write a function that prints a square, followed by a new line.
 9- Write a program that prints the numbers from 1 to 100, followed by a new line.
 10- Write a function that prints a triangle, followed by a new line.
+11- The prime factors of 1231952
