@@ -1,48 +1,85 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * _puts - prints a string, followed by a new line,
+ * @str: pointer to the string to print
+ * Return: void
+ */
+
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i])
+	{
+		_putchar(str[i]);
+		i++;
+	}
+
+}
 
 /**
- * _strlen - Finds the length of a string.
- * @str: The string to be measured.
- *
- * Return: The length of the string
+ * _atoi - convert a string to an integer.
+ * @s: char type string
+ * Return: integer converted
  */
-int _strlen(char *str)
+int _atoi(const char *s)
 {
-	int i;
+	int sign = 1;
+	unsigned long int resp = 0, firstNum, i;
 
-	for (i = 0; str[i]; i++)
-		;
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	{
+		if (s[firstNum] == '-')
+		{
+			sign *= -1;
+		}
+	}
 
-	return (i);
+	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	{
+		resp *= 10;
+		resp += (s[i] - 48);
+	}
+
+	return (sign * resp);
 }
 /**
- * main - multiplies two positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: always 0 (Success)
+ * print_int - prints an integer.
+ * @n: int
+ * Return: 0
  */
-int main(int argc, char *argv[])
+void print_int(unsigned long int n)
 {
-	unsigned long int a, b, res;
+	unsigned  long int divisor = 1, i, resp;
 
-	int len_a, len_b;
+	for (i = 0; n / divisor > 9; i++, divisor *= 10)
+		;
 
-	len_a = _strlen(argv[1]);
-	len_b = _strlen(argv[2]);
+	for (; divisor >= 1; n %= divisor, divisor /= 10)
+	{
+		resp = n / divisor;
+		_putchar('0' + resp);
+	}
+}
+/**
+ * main - print the result of the multiplication, followed by a new line
+ * @argc: int
+ * @argv: list
+ * Return: 0
+ */
+int main(int argc, char const *argv[])
+{
+	(void)argc;
 
-	for (i = 0; i <)
+	if (argc != 3)
+	{
+		_puts("Error ");
+		exit(98);
+	}
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
+	_putchar('\n');
 
-		if (argc != 3)
-		{
-			printf("Error\n");
-			return (98);
-		}
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-
-	res = mul(a, b);
-	printf("%d", res);
+	return (0);
 }
