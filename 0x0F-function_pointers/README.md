@@ -1,10 +1,15 @@
-#ifndef _FUNCTION_POINTERS_
-#define _FUNCTION_POINTERS_
+0x0F. C - Function pointers
 
-#include <stdlib.h>
+Learning Objectives
+What are function pointers and how to use them
+What does a function pointer exactly hold
+Where does a function pointer point to in the virtual memory
 
-void print_name(char *name, void (*f)(char *));
-void array_iterator(int *array, size_t size, void (*action)(int));
-int int_index(int *array, int size, int (*cmp)(int));
+Tasks
+0- Write a function that prints a name.
+1- Write a function that executes a function given as a parameter on each element of an array.
+2- Write a function that searches for an integer.
+3- Write a program that performs simple operations.
+4- Write a program that prints the opcodes of its own main function.
 
-#endif
+
