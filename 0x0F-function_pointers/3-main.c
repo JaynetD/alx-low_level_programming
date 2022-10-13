@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for School students.
  * @argc: argument count.
  * @argv: argument vector.
  *
@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 
 	if ((argv[2][0] == '/' || argv[2][0] == '%') && (b == 0))
+	{
 		printf("Error\n");
 	exit(100);
 }
