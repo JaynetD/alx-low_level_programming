@@ -7,6 +7,7 @@
  * @n: amount of the arguments.
  *
  * Return: sum of its parameters.
+ * On error, 0 is returned
  */
 
 int sum_them_all(const unsigned int n, ...)
